@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main id="main">
+      <div class="top-container">
+        <img
+          class="image-top"
+          src="images/photo-top.png"
+          alt="rock, paper, scissors game, let's play"
+        />
+        <button id="start">start</button>
+      </div>
+      <div class="main-container">
+        <div class="main-container-inner">
+        <div class="main-container-top">
+          <div class="players-chioce">	
+            <h2>Player's chioce:</h2>
+            <div class="buttons">
+              <button class="rock">
+                <img
+                  src="images/rock.png"
+                  class="btn-image"
+                  alt="image of a rock"
+                />
+              </button>
+              <button class="paper">
+                <img
+                  src="images/paper.png"
+                  class="btn-image"
+                  alt="image of a paper"
+                />
+              </button>
+              <button class="scissors">
+                <img
+                  src="images/scissors.png"
+                  class="btn-image"
+                  alt="image of scissors"
+                />
+              </button>
+              </div>
+              </div>
+          <div class="computers-choice">
+            <h2>Computer's choice: </h2>
+            <span id="comp"></span>
+          </div>
+
+        
+        </div>
+        <div class="score-container">
+          <h2>
+            User score:
+            <span id="user-score">0</span>
+          </h2>
+          <h2>
+            Computer score:
+            <span id="computer-score">0</span>
+          </h2>
+          
+        </div>
+
+        <div class="playGame"></div>
+
+        <p id="result"></p>
+      </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
