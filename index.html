@@ -19,57 +19,76 @@
       </div>
       <div class="main-container">
         <div class="main-container-inner">
-        <div class="main-container-top">
-          <div class="players-chioce">	
-            <h2>Player's chioce:</h2>
-            <div class="buttons">
-              <button class="rock">
-                <img
-                  src="images/rock.png"
-                  class="btn-image"
-                  alt="image of a rock"
-                />
-              </button>
-              <button class="paper">
-                <img
-                  src="images/paper.png"
-                  class="btn-image"
-                  alt="image of a paper"
-                />
-              </button>
-              <button class="scissors">
-                <img
-                  src="images/scissors.png"
-                  class="btn-image"
-                  alt="image of scissors"
-                />
-              </button>
+          <div class="main-container-top">
+            <div class="players-choice">
+              <h2>Player's chioce:</h2>
+              <div class="buttons">
+                <button id="rock">
+                  <img
+                    src="images/rock.png"
+                    class="btn-image"
+                    alt="image of a rock"
+                  />
+                </button>
+                <button id="paper">
+                  <img
+                    src="images/paper.png"
+                    class="btn-image"
+                    alt="image of a paper"
+                  />
+                </button>
+                <button id="scissors">
+                  <img
+                    src="images/scissors.png"
+                    class="btn-image"
+                    alt="image of scissors"
+                  />
+                </button>
               </div>
+            </div>
+            <div class="computers-choice">
+              <h2>Computer's choice:</h2>
+              <div id="comp">
+                <button class="rock">
+                  <img
+                    src="images/rock.png"
+                    class="btn-image"
+                    alt="image of a rock"
+                  />
+                </button>
+                <button class="paper">
+                  <img
+                    src="images/paper.png"
+                    class="btn-image"
+                    alt="image of a paper"
+                  />
+                </button>
+                <button class="scissors">
+                  <img
+                    src="images/scissors.png"
+                    class="btn-image"
+                    alt="image of scissors"
+                  />
+                </button>
               </div>
-          <div class="computers-choice">
-            <h2>Computer's choice: </h2>
-            <span id="comp"></span>
+            </div>
+          </div>
+          <div class="score-container">
+            <h2>
+              User
+              <span id="user-score">0</span>
+              <span id="computer-score">0</span>
+              Computer
+            </h2>
           </div>
 
-        
+          <div>
+            <p id="result" class="roundResult"></p>
+          </div>
+          <div>
+            <p class="finalResult"></p>
+          </div>
         </div>
-        <div class="score-container">
-          <h2>
-            User score:
-            <span id="user-score">0</span>
-          </h2>
-          <h2>
-            Computer score:
-            <span id="computer-score">0</span>
-          </h2>
-          
-        </div>
-
-        
-
-        <p id="result"></p>
-        <p class="finalResult"></p>
-      </div>
       </div>
     </main>
     <script src="app.js"></script>
