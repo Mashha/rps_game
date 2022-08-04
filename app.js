@@ -110,8 +110,10 @@ function showImages(iconName) {
 function win() {
   if (userScore === 5) {
     finalResult.textContent = 'You won this round 😀'
+    buttonDisabled()
   } else if (computerScore === 5) {
     finalResult.textContent = 'You lost this round 😔'
+    buttonDisabled()
   }
 }
 
@@ -123,3 +125,10 @@ function restart() {
   userSpanScore.textContent = `${0}`
   computerSpanScore.textContent = `${0}`
 }
+
+function buttonDisabled() {
+   rock.disabled = true;
+   paper.disabled = true;
+   scissors.disabled = true;
+}
+
