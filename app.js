@@ -132,6 +132,7 @@ function win() {
 
 // restart button
 function reset() {
+  showImages()
   result.textContent = ''
   finalResult.textContent = ''
   computerScore = 0
