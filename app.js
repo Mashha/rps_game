@@ -14,15 +14,15 @@ let result = document.getElementById('result')
 //final result
 let finalResult = document.querySelector('.finalResult')
 //score
-let computerScore = 0
-let userScore = 0
+let computerScore = 0;
+let userScore = 0;
 
 //score output
 let computerSpanScore = document.getElementById('computer-score')
 let userSpanScore = document.getElementById('user-score')
 
 // computer chose
-let compSpanChoice = document.getElementById('comp')
+let compDivChoice = document.getElementById('comp')
 
 // random computer choice
 const options = ['rock', 'paper', 'scissors']
@@ -33,20 +33,34 @@ function computerPlay() {
 
 let computerSelection = computerPlay()
 
+// event listener for reset button
+let resetButton = document.getElementById('reset')
+resetButton.addEventListener('click', reset)
+
 // event listeners to buttons
 rock.addEventListener('click', () => {
+  //added transform on click and added timeout function to go back to normal after a second
+  rock.style.transform = "scale(1.3)"
+  setTimeout(() => {
+    rock.style.transform = "scale(1)"
+  },1000)
   playGame('rock', computerPlay())
 })
 paper.addEventListener('click', () => {
+  paper.style.transform = "scale(1.3)"
+  setTimeout(() => {
+    paper.style.transform = "scale(1)"
+  },1000)
   playGame('paper', computerPlay())
 })
 scissors.addEventListener('click', () => {
+  scissors.style.transform = "scale(1.3)"
+  setTimeout(() => {
+    scissors.style.transform = "scale(1)"
+  },1000)
   playGame('scissors', computerPlay())
 })
 
-// event listener for reset button
-let resetButton = document.getElementById('reset')
-resetButton.addEventListener('click', restart)
 
 //game with computer
 function playGame(playerSelection, computerSelection) {
@@ -117,15 +131,20 @@ function win() {
   }
 }
 
+
 // restart button
-function restart() {
-  compSpanChoice.textContent = ''
+function reset() {
+  
   result.textContent = ''
   finalResult.textContent = ''
-  userSpanScore.textContent = `${0}`
-  computerSpanScore.textContent = `${0}`
+  computerScore = 0;
+  userScore = 0;
+  computerSpanScore.textContent = 0
+  userSpanScore.textContent = 0
 }
 
+
+// disabled buttons after somebody reaches 5 points, need to reset for new game
 function buttonDisabled() {
    rock.disabled = true;
    paper.disabled = true;

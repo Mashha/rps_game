@@ -42,12 +42,18 @@ body {
 .main-container-top {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .buttons button {
   border: none;
   cursor: pointer;
   background: transparent;
+  width: 70px;
+}
+
+.btn-image {
+  width: 100%;
 }
 
 .players-choice,
@@ -76,11 +82,15 @@ body {
 .roundResult {
   font-size: 25px;
   text-align: center;
+  margin: 0;
+  padding: 10px;
 }
 
 .finalResult {
   font-size: 30px;
   text-align: center;
+  margin: 0;
+  padding: 10px;
 }
 
 #reset {
@@ -90,6 +100,7 @@ body {
   background-color: #f9c900;
   cursor: pointer;
   font-family: 'Chewy', cursive;
+  letter-spacing: 1px;
 }
 
 #reset:hover {
@@ -102,8 +113,17 @@ body {
   border: none;
   background: transparent;
   display: none;
+  width: 70px;
 }
 
-.btn-image {
-  width: 60px;
+.score-container {
+  margin: 20px 0;
+}
+
+.result-container {
+  margin-top: 30px;
+}
+
+.final {
+  margin-top: 30px;
 }
