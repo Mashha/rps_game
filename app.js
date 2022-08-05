@@ -14,8 +14,8 @@ let result = document.getElementById('result')
 //final result
 let finalResult = document.querySelector('.finalResult')
 //score
-let computerScore = 0;
-let userScore = 0;
+let computerScore = 0
+let userScore = 0
 
 //score output
 let computerSpanScore = document.getElementById('computer-score')
@@ -40,27 +40,26 @@ resetButton.addEventListener('click', reset)
 // event listeners to buttons
 rock.addEventListener('click', () => {
   //added transform on click and added timeout function to go back to normal after a second
-  rock.style.transform = "scale(1.3)"
+  rock.style.transform = 'scale(1.3)'
   setTimeout(() => {
-    rock.style.transform = "scale(1)"
-  },1000)
+    rock.style.transform = 'scale(1)'
+  }, 1000)
   playGame('rock', computerPlay())
 })
 paper.addEventListener('click', () => {
-  paper.style.transform = "scale(1.3)"
+  paper.style.transform = 'scale(1.3)'
   setTimeout(() => {
-    paper.style.transform = "scale(1)"
-  },1000)
+    paper.style.transform = 'scale(1)'
+  }, 1000)
   playGame('paper', computerPlay())
 })
 scissors.addEventListener('click', () => {
-  scissors.style.transform = "scale(1.3)"
+  scissors.style.transform = 'scale(1.3)'
   setTimeout(() => {
-    scissors.style.transform = "scale(1)"
-  },1000)
+    scissors.style.transform = 'scale(1)'
+  }, 1000)
   playGame('scissors', computerPlay())
 })
-
 
 //game with computer
 function playGame(playerSelection, computerSelection) {
@@ -131,23 +130,19 @@ function win() {
   }
 }
 
-
 // restart button
 function reset() {
-  
   result.textContent = ''
   finalResult.textContent = ''
-  computerScore = 0;
-  userScore = 0;
+  computerScore = 0
+  userScore = 0
   computerSpanScore.textContent = 0
   userSpanScore.textContent = 0
 }
 
-
 // disabled buttons after somebody reaches 5 points, need to reset for new game
 function buttonDisabled() {
-   rock.disabled = true;
-   paper.disabled = true;
-   scissors.disabled = true;
+  rock.disabled = true
+  paper.disabled = true
+  scissors.disabled = true
 }
-
