@@ -69,7 +69,7 @@ function playGame(playerSelection, computerSelection) {
     (playerSelection === 'paper' && computerSelection === 'rock')
   ) {
     userScore++
-    result.textContent = `Yaay you won! ${playerSelection} beats ${computerSelection}`
+    result.textContent = `Yay you won! ${playerSelection} beats ${computerSelection}`
     // user wins
   } else if (
     (playerSelection === 'rock' && computerSelection === 'paper') ||
@@ -146,4 +146,39 @@ function buttonDisabled() {
   rock.disabled = true
   paper.disabled = true
   scissors.disabled = true
+}
+
+// on btn click change image
+let changeBgImage = document.getElementById('changeBgImg')
+let mainContainer = document.querySelector('.main-container')
+
+changeBgImage.addEventListener('click', () => {
+  // change chosen image
+  // new value to that variable on every click
+  let chosenImage = randomImgChoices()
+  bgImageShow(chosenImage)
+})
+
+// change background images randomly
+let imageChoices = ['spring', 'summer', 'autumn', 'winter']
+
+function randomImgChoices() {
+  return imageChoices[Math.floor(Math.random() * imageChoices.length)]
+}
+
+function bgImageShow(chosenImage) {
+  switch (chosenImage) {
+    case 'spring':
+      mainContainer.style.backgroundImage = 'url(images/spring.jpg)'
+      break
+    case 'summer':
+      mainContainer.style.backgroundImage = 'url(images/summer.jpg)'
+      break
+    case 'autumn':
+      mainContainer.style.backgroundImage = 'url(images/autumn.jpg)'
+      break
+    case 'winter':
+      mainContainer.style.backgroundImage = 'url(images/winter.jpg)'
+      break
+  }
 }

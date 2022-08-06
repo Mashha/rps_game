@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 
+html {
+  height: 100vh;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -23,8 +27,8 @@ body {
 }
 
 .main-container {
-  height: 75vh;
-  background-image: url('images/bg-image.jpg');
+  height: 100%;
+  background-image: url('images/spring.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -126,4 +130,24 @@ body {
 
 .final {
   margin-top: 30px;
+}
+
+#changeBgImg {
+  background-color: #00cae5;
+  padding: 8px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Chewy', cursive;
+  letter-spacing: 1px;
+}
+
+#changeBgImg:hover {
+  background-color: #f9c900;
+}
+
+@media (min-width: 1500px){
+  .main-container {
+    height: 82vh;
+  }
 }
