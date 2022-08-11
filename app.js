@@ -139,6 +139,13 @@ function reset() {
   userScore = 0
   computerSpanScore.textContent = 0
   userSpanScore.textContent = 0
+  buttonEnabled()
+}
+
+function buttonEnabled() {
+  rock.disabled = false
+  paper.disabled = false
+  scissors.disabled = false
 }
 
 // disabled buttons after somebody reaches 5 points, need to reset for new game
