@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Puppies+Play&display=swap');
 
 body {
   padding: 0;
@@ -162,9 +163,12 @@ body {
   text-align: center;
 }
 
-#signature span {
+#signature a {
   font-family: 'Inspiration', cursive;
-  font-size: 20px;
+  font-size: 35px;
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
 }
 
 @media (max-width: 700px) {
