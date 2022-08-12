@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
 
-
 body {
   padding: 0;
   margin: 0;
@@ -150,7 +149,6 @@ body {
 
 #changeBgImg:hover {
   background-color: #f9c900;
- 
 }
 
 #signature {
@@ -169,30 +167,43 @@ body {
   font-size: 20px;
 }
 
-@media (max-width: 700px){
+@media (max-width: 700px) {
   .top-container {
-   flex-direction: column;
+    flex-direction: column;
   }
   .top-container button {
     margin: 10px 0;
   }
 }
 
-@media (max-width: 500px){ 
+@media (max-width: 500px) {
   .top-container img {
     width: 400px;
   }
   .main-container-inner {
     width: 100%;
-    
   }
   .main-container-top {
     flex-direction: column;
   }
 }
 
-@media (max-width: 390px){ 
+@media (max-width: 390px) {
   .top-container img {
     width: 320px;
+  }
+  .players-choice,
+  .computers-choice {
+    font-size: 17px;
+  }
+  #user-score,
+  #computer-score {
+    font-size: 40px;
+  }
+  .result-container {
+    margin-top: 5px;
+  }
+  .finalResult {
+    font-size: 25px;
   }
 }
