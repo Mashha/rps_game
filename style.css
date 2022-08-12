@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
 
 html {
   height: 100vh;
@@ -32,11 +33,12 @@ body {
 }
 
 .main-container {
-  height: 75vh;
+  height: 100vh;
   background-image: url('images/spring.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .main-container-inner {
@@ -154,9 +156,36 @@ body {
  
 }
 
+#signature {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#signature p {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+#signature span {
+  font-family: 'Inspiration', cursive;
+  font-size: 20px;
+}
+
 @media (max-width: 700px){
   .top-container {
    flex-direction: column;
   }
+  .top-container button {
+    margin: 10px 0;
+  }
 }
 
+@media (max-width: 500px){ 
+  .main-container-inner {
+    width: 90%;
+  }
+  .main-container-top {
+    flex-direction: column;
+  }
+}
