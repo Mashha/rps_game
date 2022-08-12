@@ -9,7 +9,6 @@ body {
   height: 100vh;
   font-family: 'Chewy', cursive;
   letter-spacing: 1px;
-  overflow: hidden;
 }
 
 #main {
@@ -180,10 +179,20 @@ body {
 }
 
 @media (max-width: 500px){ 
+  .top-container img {
+    width: 400px;
+  }
   .main-container-inner {
-    width: 90%;
+    width: 100%;
+    
   }
   .main-container-top {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 390px){ 
+  .top-container img {
+    width: 320px;
   }
 }
