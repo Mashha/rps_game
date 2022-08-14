@@ -164,10 +164,6 @@ let mainContainer = document.querySelector('.main-container')
 let currentImage = 0;
 let imageChoices = ['spring', 'summer', 'autumn', 'winter']
 
-function randomImgChoices() {
-  return imageChoices[Math.floor(Math.random() * imageChoices.length)]
-}
-
 changeBgImage.addEventListener('click', () => {
   // change chosen image
   // new value to that variable on every click
