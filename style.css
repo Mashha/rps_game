@@ -163,12 +163,16 @@ body {
   text-align: center;
 }
 
-#signature a {
+#name {
   font-family: 'Inspiration', cursive;
   font-size: 35px;
   text-decoration: none;
   color:black;
   font-weight: bold;
+}
+
+#name:hover {
+  color: white;
 }
 
 @media (max-width: 700px) {
