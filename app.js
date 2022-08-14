@@ -159,19 +159,22 @@ function buttonDisabled() {
 let changeBgImage = document.getElementById('changeBgImg')
 let mainContainer = document.querySelector('.main-container')
 
-changeBgImage.addEventListener('click', () => {
-  // change chosen image
-  // new value to that variable on every click
-  let chosenImage = randomImgChoices()
-  bgImageShow(chosenImage)
-})
 
 // change background images randomly
+let currentImage = 0;
 let imageChoices = ['spring', 'summer', 'autumn', 'winter']
 
 function randomImgChoices() {
   return imageChoices[Math.floor(Math.random() * imageChoices.length)]
 }
+
+changeBgImage.addEventListener('click', () => {
+  // change chosen image
+  // new value to that variable on every click
+  currentImage = ++currentImage % imageChoices.length
+  let chosenImage = imageChoices[currentImage];
+  bgImageShow(chosenImage)
+})
 
 function bgImageShow(chosenImage) {
   switch (chosenImage) {
