@@ -12,8 +12,8 @@ Skills I used: html, css, javascript, figma
 
 ## Source
 This project is a part of the Odin project bootcamp, where i got the »instructions«, the logic of  the implementation and the desgin are mine. 
-https://www.theodinproject.com/lessons/foundations-rock-paper-scissors
-https://www.theodinproject.com/lessons/foundations-revisiting-rock-paper-scissors
+Foundation for console -> https://www.theodinproject.com/lessons/foundations-rock-paper-scissors
+Upgrade to dom -> https://www.theodinproject.com/lessons/foundations-revisiting-rock-paper-scissors
 
 and live version:
 https://rock-paper-scissors-game-bypimu.netlify.app/
